@@ -9,7 +9,8 @@ int main() {
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
     char peca;
-    int t = 1, b = 1, r = 1;
+    int t = 1, b = 1, r = 1, c = 1;
+    int direcao_cavalo;
 
         printf("Escolha a peca: \n");
     printf("T. Torre\n");
@@ -188,21 +189,184 @@ int main() {
 
         break;
     
-    default:
-        printf("Opcao invalida!\n");
-        break;
-    }
-
-    
-
-
-    return 0;
-}  
-
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
+    case 'C':
+    case 'c':
+
+        printf("Voce escolheu o Cavalo\n\n");
+
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("8 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("7 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("6 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("5 |   |   |   | C |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("4 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("3 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("2 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("1 |   |   |   |   |   |   |   |   |\n");
+        printf("  +---+---+---+---+---+---+---+---+\n");
+        printf("    a   b   c   d   e   f   g   h\n\n");
+
+        printf("Agora escolha a direcao: \n");
+        printf("1. 2 para cima e 1 para direita\n");
+        printf("2. 2 para cima e 1 para esquerda\n");
+        printf("3. 2 para baixo e 1 para direita\n");
+        printf("4. 2 para baixo e 1 para esquerda\n");    
+        scanf("%d", &direcao_cavalo);
+
+        printf("\n");
+
+        switch (direcao_cavalo)
+        {
+        case 1:
+            while (c--)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    printf("Cima\n");
+                }
+
+                printf("Direita\n");
+                
+            }
+
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("8 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("7 |   |   |   |   | C |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("6 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("5 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("4 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("3 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("2 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("1 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("    a   b   c   d   e   f   g   h\n\n");
+            break;
+
+        case 2:
+            while (c--)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    printf("Cima\n");
+                }
+
+                printf("Esquerda\n");
+                
+            }
+
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("8 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("7 |   |   | C |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("6 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("5 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("4 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("3 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("2 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("1 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("    a   b   c   d   e   f   g   h\n\n");
+            break;
+
+        case 3:
+            while (c--)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    printf("Baixo\n");
+                }
+
+                printf("Direita\n");
+                
+            } 
+
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("8 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("7 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("6 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("5 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("4 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("3 |   |   |   |   | C |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("2 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("1 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("    a   b   c   d   e   f   g   h\n\n");
+            break;
+
+        case 4:
+            while (c--)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    printf("Baixo\n");
+                }
+
+                printf("Esquerda\n");
+                
+            } 
+
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("8 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("7 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("6 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("5 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("4 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("3 |   |   | C |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("2 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("1 |   |   |   |   |   |   |   |   |\n");
+                printf("  +---+---+---+---+---+---+---+---+\n");
+                printf("    a   b   c   d   e   f   g   h\n\n");
+            break;
+        
+        default:
+            printf("Opcao invalida!\n");
+            break;
+        }
+
+        break;
+
+    default:
+        printf("Opcao invalida!\n");
+        break;
+    }
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
